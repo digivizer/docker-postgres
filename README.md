@@ -8,4 +8,4 @@ Postgres bundled with modern extensions
 
 MIT
 
-run with docker run -d -p "5432:5432" --name postgress -e POSTGRES_PASSWORD=password sheerun/awesome-postgres /docker-entrypoint.sh postgres
+run with `docker run -d -p "5432:5432" --name postgres -e POSTGRES_PASSWORD=password digivizer/postgres /docker-entrypoint.sh postgres`
