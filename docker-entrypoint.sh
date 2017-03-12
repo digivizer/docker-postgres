@@ -46,6 +46,8 @@ if [ "$1" = 'postgres' ]; then
 		cp /usr/share/postgresql/$PG_MAJOR/pg_hba.conf "$PGDATA/pg_hba.conf"
 		{ echo; echo "host replication all 0.0.0.0/0 $authMethod"; } >> "$PGDATA/pg_hba.conf"
 		{ echo; echo "host all all 0.0.0.0/0 $authMethod"; } >> "$PGDATA/pg_hba.conf"
+		{ echo; echo "host replication all ::/0 $authMethod"; } >> "$PGDATA/pg_hba.conf"
+		{ echo; echo "host all all ::/0 $authMethod"; } >> "$PGDATA/pg_hba.conf"
 
 		# internal start of server in order to allow set-up using psql-client
 		# does not listen on external TCP/IP and waits until start finishes
