@@ -24,3 +24,7 @@ COPY docker-entrypoint.sh /docker-entrypoint.sh
 COPY init.sh /docker-entrypoint-initdb.d/init.sh
 
 CMD ["/docker-entrypoint.sh", "postgres"]
+
+# HEALTHCHECK
+COPY docker-healthcheck /usr/local/bin/
+HEALTHCHECK CMD ["docker-healthcheck"]
