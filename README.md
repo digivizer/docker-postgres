@@ -2,7 +2,7 @@
 
 Postgres bundled with modern extensions
 
-- [pglogical 1.1.2](https://2ndquadrant.com/en/resources/pglogical/)
+- [pglogical 2.2.1](https://2ndquadrant.com/en/resources/pglogical/)
 
 ## License
 
