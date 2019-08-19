@@ -1,4 +1,4 @@
-FROM postgres:9.5
+FROM postgres:11
 MAINTAINER Rob Sharp <rob.sharp@digivizer.com>
 
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates wget python-pip curl build-essential apt-utils
